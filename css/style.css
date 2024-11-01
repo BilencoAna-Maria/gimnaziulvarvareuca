@@ -1,0 +1,251 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: "Onest", system-ui;
+    
+}
+main{
+    min-height: 100vh;
+}
+
+
+
+header{
+    background: #1195ce;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 10px 15px 5px 15px;
+}
+
+navbar a{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 20px;
+}
+navbar{
+    margin-left: 40px;
+    margin-bottom: 10px;
+    display: inline-block;
+    overflow: auto;
+}
+navbar a:hover{
+    color: #FF9933;
+    text-decoration: underline 1px;
+}
+
+footer{
+    min-height: 80px;
+    background: #0099DD;
+    text-align: center;
+    color: azure;
+    padding-top: 50px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin-top: 0;
+    font-family: "Roboto Slab", serif;
+}
+h5 {
+    color: #56585a;
+}
+
+h1{
+    font-size: 200%;
+}
+h2{
+    font-size: 150%;
+}
+section{
+    padding: 90px 15%;
+
+}
+
+.logo{
+    height: 60px;
+}
+
+#index{
+    background: linear-gradient(#0404042e, #0b0b0b19), url('../images/intrare.jpg');
+    background-size: cover;
+    min-height: 120vh;
+
+}
+
+#anunturi{
+    background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% );
+    min-height: 120vh;
+    background-size: cover;
+
+}
+
+.index-info{
+    margin-top: 30vh;
+    text-align: center;
+}
+.index-info h1{
+    font-size: 300%;
+    color: #026E81;
+    border: 2px solid #0d5967e6;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #a1c7e0ad;
+}
+.link-index{
+    color: white;
+    text-decoration: underline coral 2px;
+    font-size: 15px;
+}
+.link-index1{
+    color: #1f02ff;
+    text-decoration: underline #1f02ff 1.5px;
+    font-size: 15px;
+}
+.link-index:hover{
+    color: #e1722e;
+}
+
+.centered{
+    text-align: center;
+}
+p{
+    text-indent: 15px;
+    line-height: 150%;
+}
+li{
+    margin-top: 10px;
+    padding-left: 15px;
+    list-style-image: linear-gradient(coral, coral);
+}
+.vframe{
+    width: 100%;
+    height: 30vw;
+    border: 2px solid #e1722e;
+    box-shadow: rgba(0, 0, 0, 0.24) opx 5px 9px ;
+}
+
+.loc{
+    overflow: auto;
+    border-bottom: 3px #fa9f45 dashed;
+    margin-bottom: 15px;
+}
+
+.loc1{
+    overflow: auto;
+    
+    margin-bottom: 15px;
+}
+
+.loc img{
+    height: 26vh;
+    width: 30vh;
+    object-fit: cover;
+
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.loc1 img{
+    height: 26vh;
+    width: 30vh;
+    object-fit: cover;
+
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.harta{
+
+    width: 100%;
+    height: 40vh;
+}
+
+.row{
+    overflow: auto;
+}
+
+[calas^="col-"]{
+    float: left;
+    padding: 0px 10px;
+}
+.col-50{
+    width: 50%;
+    float: left;
+    padding: 0px 10px;
+}
+.contacte , .cform{
+    border: 2px #5D8679 solid;
+    border-radius: 5px;
+    background-color: #3e7c5948;
+    padding: 5px 5%;
+    height: 500px;
+    margin-bottom:15px ;
+}
+
+.cform input, .cform textarea{
+    width: 100%;
+    font-size: 15px;
+    font-family: inherit;
+    margin-bottom: 10px;
+    padding: 4px 6px;
+}
+#hamburger{
+    color: white;
+    font-size: 28px;
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+/*media e la sfÃ¢rÈ™it*/
+@media (max-width: 800px){
+
+
+
+    section{
+       padding: 90px 10px;
+    }
+
+    .index-info h1 {
+        font-size: 250%;
+    }
+
+    .vframe{
+        height: 55vw;
+    }
+
+    .col-50{
+        width: 100% !important;
+        float: left;
+        padding: 0px 10px;
+    }
+
+    navbar a {
+        display: none;
+    }
+    
+    navbar.mobile a{
+        display: block;
+        text-align: center;
+        margin-top: 12px;
+    }
+
+    navbar{
+        display: block;
+    }
+
+    #hamburger{
+    display: block;
+    }
+}
